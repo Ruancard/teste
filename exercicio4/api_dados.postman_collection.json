@@ -10,7 +10,17 @@
 			"name": "Obter todos os registros",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/dados",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"dados"
+					]
+				}
 			},
 			"response": []
 		},
@@ -18,9 +28,49 @@
 			"name": "Obter dado por ID",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/dados/1",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"dados",
+						"1"
+					]
+				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:5000",
+			"type": "string"
 		}
 	]
 }
