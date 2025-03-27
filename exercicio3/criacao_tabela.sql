@@ -17,14 +17,14 @@ CREATE TEMPORARY TABLE data_import (
     vl_saldo_final TEXT
 );
 
-COPY data_import FROM 'C:\Users\ruanl\Desktop\teste\exercicio3\tabelas\2023\1T2023\1T2023.csv' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
-COPY data_import FROM 'C:\Users\ruanl\Desktop\teste\exercicio3\tabelas\2023\2T2023\2t2023.csv' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
-COPY data_import FROM 'C:\Users\ruanl\Desktop\teste\exercicio3\tabelas\2023\3T2023\3T2023.csv' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
-COPY data_import FROM 'C:\Users\ruanl\Desktop\teste\exercicio3\tabelas\2023\4T2023\4T2023.csv' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
-COPY data_import FROM 'C:\Users\ruanl\Desktop\teste\exercicio3\tabelas\2024\1T2024\1T2024.csv' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
-COPY data_import FROM 'C:\Users\ruanl\Desktop\teste\exercicio3\tabelas\2024\2T2024\2T2024.csv' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
-COPY data_import FROM 'C:\Users\ruanl\Desktop\teste\exercicio3\tabelas\2024\3T2024\3T2024.csv' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
-COPY data_import FROM 'C:\Users\ruanl\Desktop\teste\exercicio3\tabelas\2024\4T2024\4T2024.csv' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
+COPY data_import FROM 'caminho[1T2023.csv]' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
+COPY data_import FROM 'caminho[2t2023.csv]' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
+COPY data_import FROM 'caminho[3T2023.csv]' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
+COPY data_import FROM 'caminho[4T2023.csv]' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
+COPY data_import FROM 'caminho[1T2024.csv]' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
+COPY data_import FROM 'caminho[2T2024.csv]' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
+COPY data_import FROM 'caminho[3T2024.csv]' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
+COPY data_import FROM 'caminho[4T2024.csv]' WITH (FORMAT csv, DELIMITER ';', NULL '', QUOTE '"', ENCODING 'UTF8');
 
 DELETE FROM data_import WHERE data = 'DATA';
 

@@ -1,0 +1,26 @@
+{
+	"info": {
+		"_postman_id": "5104e411-b6be-4bae-a13a-eea4cce09148",
+		"name": "api_dados",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34144851"
+	},
+	"item": [
+		{
+			"name": "Obter todos os registros",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Obter dado por ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
